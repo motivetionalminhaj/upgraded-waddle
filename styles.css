@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    background: url('/mnt/data/goku_tired_by_gfflhf_dfirube.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay to make text more visible */
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+    animation: fadeInDown 1s ease-out;
+}
+
+.subtitle, .location {
+    font-size: 1.5em;
+    margin: 0.3em 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 20px 0;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+section {
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.animated {
+    color: #ff6600;
+    font-weight: bold;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes colorChange {
+    0% { color: #ff6600; }
+    50% { color: #ffffff; }
+    100% { color: #ff6600; }
+}
